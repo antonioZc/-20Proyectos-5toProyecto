@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer-contenido{
+    display: flex;
+    background-color: v.$blanco;
+    text-align: center;
+    padding: 3rem 0;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include m.tablet { 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    h3{
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-family: v.$fuenteCursiva;
+        color: v.$secundario;
+    }
+
+    p{
+        margin: 0;
+    }
+}

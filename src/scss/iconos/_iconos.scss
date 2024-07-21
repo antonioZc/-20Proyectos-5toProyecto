@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+
+.iconos{
+    margin-top: v.$separacion;
+}
+
+.listado-iconos{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1rem;
+
+    li{
+        img{
+            width: 13rem;
+        }
+
+        p{
+            color: v.$primario;
+            font-size: 3.2rem;
+            font-weight: 400;
+            font-family: v.$fuenteCursiva;
+        }
+    }
+}
